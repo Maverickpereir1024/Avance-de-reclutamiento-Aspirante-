@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclutamiento</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Mark<span>Nic</span></div>
+        <button class="btn-cv-icon"><i class="fas fa-user"></i></button>
+    </nav>
+
+    <div class="container">
+        <section class="search-section">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Cargo o categoría">
+            </div>
+
+            <div class="mobile-filters">
+                <button class="filter-chip active">Pasantia</button>
+                <button class="filter-chip">Experiencia <i class = "fas fa-chevron-down"></i></button>
+                <button class="filter-chip">Salario <i class="fas fa-chevron-down"></i></button>
+                <button class="filter-chip">Ubicación <i class="fas fa-chevron-down"></i></button>
+                <button class="filter-chip">Jornada <i class="fas fa-chevron-down"></i></button>
+            </div>
+
+        </section>
+        <div class="alert-banner">
+            <p><i class="fas fa-bell"></i> ¿Quieres recibir ofertas de Trabajo?</p>
+            <button>Activar</button>
+        </div>
+
+        <class="jobs-feed">
+            <h3 class="section-title">3 Ofertas encontradas</h3>
+            
+            <div class="job-card">
+                <div class="card-header">
+                    <h4>Ejecutivo de Soporte Tecnico</h4>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+
+                <p class="company"><i class="fas fa-check-circle"></i> Maverick, S.A.</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Managua, Nicaragua</p>
+                
+                <div class="card-footer">
+                    <span class="tag">Hace 9 días</span>
+                    <button class="btn-details">Ver detalle</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="card-header">
+                    <h4>Pasante de Sistemas</h4>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+
+                <p class="company"><i class="fas fa-check-circle"></i> Castillo Solutions</p>
+                <p class="location"><i class="fas fa-laptop-house"></i> Trabajo Remoto</p>
+                
+                <div class="card-footer">
+                    <span class="tag">Nuevo</span>
+                    <button class="btn-details">Ver detalle</button>
+                </div>
+            </div>
+            
+             <div class="job-card">
+                <div class="card-header">
+                    <h4>Analista de Datos Jr.</h4>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+
+                <p class="company"><i class="fas fa-check-circle"></i> Kenneth Lopez Corporation</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Chinandega, Nicaragua</p>
+                <div class="card-footer">
+                 <span class="tag">Hace 2 días</span>
+                <button class="btn-details1">Ver detalle</button>
+            </div>
+        </div>
+        </section>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5,
+user-scalable=yes">
+
+    <title>CURSO MULTIMEDIA MOVIL</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+<h1>Portal de Incidencias</h1>
+<p>Reporta problemas del campus desde tu móvil.</p>
+</header>
+<nav aria-label="Navegación principal">
+<a href="#categorias">Categorías</a>
+<a href="#reporte">Nuevo reporte</a>
+<a href="#ayuda">Ayuda</a>
+</nav>
+
+<main>
+<section id="categorias">
+<h2>Categorías frecuentes</h2>
+<article>
+<h3>Electricidad</h3>
+<p>Fallas de iluminación, tomas sin energía, cortos.</p>
+</article>
+<article>
+<h3>Agua</h3>
+<p>Fugas, tuberías dañadas, baños sin agua.</p>
+</article>
+<article>
+<h3>Conectividad</h3>
+<p>Wi‐Fi inestable, sin señal, puntos caídos.</p>
+</article>
+</section>
+<section id="reporte">
+<h2>Nuevo reporte</h2>
+<p><section id="reporte">
+<h2>Nuevo reporte</h2>
+<form>
+<label>Nombre
+<input type="text" name="nombre" autocomplete="name" autocapitalize="words"
+required>
+</label>
+<label>Email
+<input type="email" name="email" autocomplete="email" required>
+</label>
+<label>Teléfono (opcional)
+<input type="tel" name="telefono" inputmode="tel" autocomplete="tel">
+</label>
+<label>Ubicación (edificio/aula)
+<input type="text" name="ubicacion" autocomplete="off" autocorrect="off"
+autocapitalize="none" required>
+</label>
+<label>Categoría
+<select name="categoria" required>
+<option value="">Selecciona una</option>
+
+<option>Electricidad</option>
+<option>Agua</option>
+<option>Conectividad</option>
+<option>Infraestructura</option>
+</select>
+</label>
+<label>Gravedad
+<input type="range" name="gravedad" min="1" max="5" value="3">
+</label>
+<label>Fecha del incidente
+<input type="date" name="fecha" required>
+</label>
+<label>Hora aproximada
+<input type="time" name="hora">
+</label>
+<label>Descripción
+<textarea name="descripcion" rows="4" required
+placeholder="Describe el problema con detalle..."></textarea>
+</label>
+<button type="submit">Enviar reporte</button>
+</form>
+</section></p>
+</section>
+<aside id="ayuda">
+<h2>Ayuda rápida</h2>
+
+
+</aside>
+</main>
+<footer>
+<small>&copy; 2026 Mesa de ayuda – Portal de Incidencias</small>
+</footer>
+</html> -->
